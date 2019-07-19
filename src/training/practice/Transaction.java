@@ -1,8 +1,6 @@
 package training.practice;
 
-import java.io.Serializable;
-
-public class Transaction implements Serializable {
+public class Transaction {
     private double amount;
     private User creator;
 
