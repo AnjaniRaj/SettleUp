@@ -13,10 +13,13 @@ public class Group {
     private User[] users;
     private String name;
     private ArrayList<Transaction> txns;
-    private HashMap<User, int[]> map;
+    private HashMap<User, double[]> map;
 
     @Override
     public String toString() {
+        for(User u:map.keySet()){
+            System.out.println(u+"owes "+map.get(u)[0]+" and is owed "+map.get(u)[1]);
+        }
         return "Group{" +
                 "users=" + Arrays.toString(users) +
                 ", name='" + name + '\'' +
@@ -29,17 +32,17 @@ public class Group {
         this.name = name;
         this.noOfUsers = users.length;
         this.txns = new ArrayList<Transaction>();
-        this.map = new HashMap<User, int[]>();
+        this.map = new HashMap<User, double[]>();
         for (User u : users) {
-            map.put(u, new int[]{0, 0});
+            map.put(u, new double[]{0, 0});
         }
     }
 
-    public HashMap<User, int[]> getMap() {
+    public HashMap<User, double[]> getMap() {
         return map;
     }
 
-    public void setMap(HashMap<User, int[]> map) {
+    public void setMap(HashMap<User, double[]> map) {
         this.map = map;
     }
 
@@ -64,7 +67,7 @@ public class Group {
     }
 
     public void addTxns(Transaction txn) {
-        int temp = txn.getAmount() / noOfUsers;
+        double temp = txn.getAmount() / noOfUsers;
         for (User u : users) {
             if (u != txn.getCreator()) {
                 map.get(u)[0] += temp;
