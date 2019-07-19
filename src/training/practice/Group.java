@@ -11,8 +11,6 @@ import java.util.HashSet;
  */
 public class Group implements Serializable {
 
-    public Group() {
-    }
 
     private int noOfUsers;
     private HashSet<User> users;
@@ -22,8 +20,8 @@ public class Group implements Serializable {
 
     @Override
     public String toString() {
-        for(User u:map.keySet()){
-            System.out.println(u+"owes "+map.get(u)[0]+" and is owed "+map.get(u)[1]);
+        for (User u : map.keySet()) {
+            System.out.println(u + "owes " + map.get(u)[0] + " and is owed " + map.get(u)[1]);
         }
         return "Group{" +
                 "users=" + printHashSet(users) +
@@ -39,15 +37,15 @@ public class Group implements Serializable {
         this.txns = new ArrayList<Transaction>();
         this.map = new HashMap<User, double[]>();
         for (User u : users) {
-            map.put(u, new double[]{0, 0});
+            this.map.put(u, new double[]{0, 0});
         }
     }
-    
+
     public String printHashSet(HashSet<User> user) {
-    	for(User temp : user) {
-    		return(temp.toString());
-    	}
-    	return "";
+        for (User temp : user) {
+            return (temp.toString());
+        }
+        return "";
     }
 
     public HashMap<User, double[]> getMap() {
@@ -81,11 +79,13 @@ public class Group implements Serializable {
     public void addTxns(Transaction txn) {
         double temp = txn.getAmount() / noOfUsers;
         for (User u : users) {
-            if (u != txn.getCreator()) {
-                map.get(u)[0] += temp;
+            if (!u.getName().equals(txn.getCreator().getName())) {
+                this.map.get(u)[0] += temp;
             }
+
         }
-        map.get(txn.getCreator())[1] = txn.getAmount() - temp;
+
+        map.get(txn.getCreator())[1] += txn.getAmount() - temp;
         txns.add(0, txn);
     }
 }
