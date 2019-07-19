@@ -1,17 +1,17 @@
 package training.practice;
 
-import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 /*
     in the hashmap <u,arr[0]>=user owes,<u,arr[1]>=user is owed
  */
-public class Group implements Serializable {
+public class Group {
 
     private int noOfUsers;
-    private User[] users;
+    private HashSet<User> users;
     private String name;
     private ArrayList<Transaction> txns;
     private HashMap<User, double[]> map;
@@ -22,16 +22,23 @@ public class Group implements Serializable {
             System.out.println(u+"owes "+map.get(u)[0]+" and is owed "+map.get(u)[1]);
         }
         return "Group{" +
-                "users=" + Arrays.toString(users) +
+                "users=" + printHashSet(users) +
                 ", name='" + name + '\'' +
                 ", txns=" + txns +
                 '}';
     }
-
-    public Group(User[] users, String name) {
+    
+    public String printHashSet(HashSet<User> user) {
+    	for(User temp : user) {
+    		return(temp.toString());
+    	}
+    	return "";
+    }
+    
+    public Group(HashSet<User> users, String name) {
         this.users = users;
         this.name = name;
-        this.noOfUsers = users.length;
+//        this.noOfUsers = users.length;
         this.txns = new ArrayList<Transaction>();
         this.map = new HashMap<User, double[]>();
         for (User u : users) {
@@ -47,11 +54,11 @@ public class Group implements Serializable {
         this.map = map;
     }
 
-    public User[] getUsers() {
+    public HashSet<User> getUsers() {
         return users;
     }
 
-    public void setUsers(User[] users) {
+    public void setUsers(HashSet<User> users) {
         this.users = users;
     }
 
