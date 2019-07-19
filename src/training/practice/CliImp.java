@@ -9,6 +9,7 @@ public class CliImp {
 
         User u1= new User(getUser());
         User u2 = new User(getUser());
+        User u3 = new User(getUser());
         System.out.println(u1+"  "+u2);
 
         storeUserSer(u1);
@@ -17,7 +18,7 @@ public class CliImp {
         ArrayList<User> userArrayList = getUserSer();
         System.out.println(userArrayList);
 
-        Group g1= new Group(new User[]{u1,u2},getGroup());
+        Group g1= new Group(new User[]{u1,u2,u3},getGroup());
         g1.addTxns(new Transaction(getTransactionAmount(),u1));
 
         System.out.println(g1);
