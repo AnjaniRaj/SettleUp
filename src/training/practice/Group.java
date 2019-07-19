@@ -1,5 +1,6 @@
 package training.practice;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,7 +8,7 @@ import java.util.HashMap;
 /*
     in the hashmap <u,arr[0]>=user owes,<u,arr[1]>=user is owed
  */
-public class Group {
+public class Group implements Serializable {
 
     private int noOfUsers;
     private User[] users;

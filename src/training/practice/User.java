@@ -1,6 +1,8 @@
 package training.practice;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private static int count=1;
     private int id;
     private String name;
