@@ -2,27 +2,58 @@ package training.practice;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class CliImp {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
+    	while(true) {
+    		System.out.println("1. Enter User \t 2. Enter New Group \t 3. Enter New Transaction \t 4. Exit");
+    		Scanner in = new Scanner(System.in);
+    		int choice = Integer.parseInt(in.nextLine());
+    		HashSet<User> set = new HashSet<>();
+    		switch(choice) {
+    		case 1:
+    			User u1 = new User(getUser());
+    			System.out.println("Created [" + u1 + "] successfully");
+    			break;
+    		case 2:
+    			String userName;
+    			System.out.println("Enter users and enter q for exiting : ");
+    			while(true) {
+    				userName = in.nextLine();
+    				if(userName.compareTo("q")!=0) {
+    					User u = getUserFromArrayList(userName);
+    					set.add(u);
+    				}
+    				else {
+    					break;
+    				}
+    			}
+    			Group g1 = new Group(set, getGroup());
+    			System.out.println(g1);
+    			break;
+    		case 3:
 
-        User u1= new User(getUser());
-        User u2 = new User(getUser());
-        User u3 = new User(getUser());
-        System.out.println(u1+"  "+u2);
+//    			g1.addTxns(new Transaction(getTransactionAmount(), getUserFromArrayList(getUser())));
+    			break;
+    		case 4:
+    			System.exit(0);
+    		default :
+    			System.out.println("Wrong Input");;
+    		}
+    	}
+    }
 
-        storeUserSer(u1);
-        storeUserSer(u2);
-
-        ArrayList<User> userArrayList = getUserSer();
-        System.out.println(userArrayList);
-
-        Group g1= new Group(new User[]{u1,u2,u3},getGroup());
-        g1.addTxns(new Transaction(getTransactionAmount(),u1));
-
-        System.out.println(g1);
-
+    public static User getUserFromArrayList(String userName) throws ClassNotFoundException, IOException {
+    	ArrayList<User> user = getUserSer();
+    	for(User temp : user) {
+    		if(temp.getName().compareTo(userName) != 0)
+    		{
+    			return temp;
+    		}
+    	}
+    	return null;
     }
 
     private static ArrayList<User> getUserSer() throws IOException, ClassNotFoundException {
