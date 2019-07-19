@@ -12,10 +12,12 @@ public class CliImp {
     		Scanner in = new Scanner(System.in);
     		int choice = Integer.parseInt(in.nextLine());
     		HashSet<User> set = new HashSet<>();
+            Group g1 = new Group();
     		switch(choice) {
     		case 1:
     			User u1 = new User(getUser());
     			System.out.println("Created [" + u1 + "] successfully");
+    			storeUserSer(u1);
     			break;
     		case 2:
     			String userName;
@@ -30,12 +32,11 @@ public class CliImp {
     					break;
     				}
     			}
-    			Group g1 = new Group(set, getGroup());
+    			g1 = new Group(set, getGroup());
     			System.out.println(g1);
     			break;
     		case 3:
-
-//    			g1.addTxns(new Transaction(getTransactionAmount(), getUserFromArrayList(getUser())));
+   			    g1.addTxns(new Transaction(getTransactionAmount(), getUserFromArrayList(getUser())));
     			break;
     		case 4:
     			System.exit(0);
@@ -56,7 +57,7 @@ public class CliImp {
     	return null;
     }
 
-    private static ArrayList<User> getUserSer() throws IOException, ClassNotFoundException {
+    private static ArrayList<User> getUserSer() throws IOException {
         File file = new File("users.ser");
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
         User user;
@@ -65,10 +66,9 @@ public class CliImp {
             while(true){
                 user= (User) ois.readObject();
                 users.add(user);
-                System.out.println(user);
             }
         }catch (EOFException e){
-            System.out.println("succesfully read");
+            //System.out.println("succesfully read");
         }
         catch (IOException e) {
             e.printStackTrace();

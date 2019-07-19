@@ -11,6 +11,9 @@ import java.util.HashSet;
  */
 public class Group implements Serializable {
 
+    public Group() {
+    }
+
     private int noOfUsers;
     private HashSet<User> users;
     private String name;
