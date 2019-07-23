@@ -1,19 +1,20 @@
 package training.practice;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 public class Transaction implements Serializable {
-    private double amount;
+    private BigDecimal amount;
     private User creator;
 
-    public Transaction(double amount, User creator) {
-        if (amount > 0) {
+    public Transaction(BigDecimal amount, User creator) {
+        if (amount.compareTo(BigDecimal.ZERO)>0) {
             this.amount = amount;
-        }else this.amount=0;
+        }else this.amount=BigDecimal.ZERO;
         this.creator = creator;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
