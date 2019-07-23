@@ -1,4 +1,7 @@
-package training.practice;
+package training;
+
+import training.beans.Group;
+import training.beans.User;
 
 import java.io.*;
 import java.util.*;

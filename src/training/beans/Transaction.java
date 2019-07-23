@@ -1,4 +1,4 @@
-package training.practice;
+package training.beans;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -8,9 +8,7 @@ public class Transaction implements Serializable {
     private User creator;
 
     public Transaction(BigDecimal amount, User creator) {
-        if (amount.compareTo(BigDecimal.ZERO)>0) {
-            this.amount = amount;
-        }else this.amount=BigDecimal.ZERO;
+        this.amount = amount;
         this.creator = creator;
     }
 

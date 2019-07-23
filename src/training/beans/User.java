@@ -1,4 +1,4 @@
-package training.practice;
+package training.beans;
 
 import java.io.Serializable;
 import java.util.Objects;
