@@ -1,8 +1,8 @@
-package training.practice;
+package training.beans;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -16,7 +16,7 @@ public class Group implements Serializable {
     private HashSet<User> users;
     private String name;
     private ArrayList<Transaction> txns;
-    private HashMap<User, double[]> map;
+    private HashMap<User, BigDecimal[]> map;
 
     @Override
     public String toString() {
@@ -35,9 +35,9 @@ public class Group implements Serializable {
         this.name = name;
         this.noOfUsers = users.size();
         this.txns = new ArrayList<Transaction>();
-        this.map = new HashMap<User, double[]>();
+        this.map = new HashMap<User, BigDecimal[]>();
         for (User u : users) {
-            this.map.put(u, new double[]{0, 0});
+            this.map.put(u, new BigDecimal[]{BigDecimal.ZERO, BigDecimal.ZERO});
         }
     }
 
@@ -48,11 +48,11 @@ public class Group implements Serializable {
         return "";
     }
 
-    public HashMap<User, double[]> getMap() {
+    public HashMap<User, BigDecimal[]> getMap() {
         return map;
     }
 
-    public void setMap(HashMap<User, double[]> map) {
+    public void setMap(HashMap<User, BigDecimal[]> map) {
         this.map = map;
     }
 
@@ -77,15 +77,15 @@ public class Group implements Serializable {
     }
 
     public void addTxns(Transaction txn) {
-        double temp = txn.getAmount() / noOfUsers;
+        BigDecimal temp = txn.getAmount().divide(new BigDecimal(noOfUsers));
         for (User u : users) {
             if (!u.getName().equals(txn.getCreator().getName())) {
-                this.map.get(u)[0] += temp;
+                this.map.get(u)[0].add(temp) ;
             }
 
         }
 
-        map.get(txn.getCreator())[1] += txn.getAmount() - temp;
+        map.get(txn.getCreator())[1].add(txn.getAmount().subtract(temp));
         txns.add(0, txn);
     }
 }
