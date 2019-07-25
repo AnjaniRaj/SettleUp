@@ -3,7 +3,7 @@ package training.beans;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User implements Serializable {
+public class User {
     private static int count=1;
     private int id;
     private String name;

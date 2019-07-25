@@ -3,7 +3,7 @@ package training.beans;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Transaction implements Serializable {
+public class Transaction{
     private BigDecimal amount;
     private User creator;
 

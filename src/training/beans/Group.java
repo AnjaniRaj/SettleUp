@@ -9,7 +9,7 @@ import java.util.HashSet;
 /*
     in the hashmap <u,arr[0]>=user owes,<u,arr[1]>=user is owed
  */
-public class Group implements Serializable {
+public class Group {
 
 
     private int noOfUsers;
