@@ -11,7 +11,7 @@ import java.util.HashSet;
  */
 public class Group {
 
-
+    private int id;
     private int noOfUsers;
     private HashSet<User> users;
     private String name;
@@ -28,6 +28,14 @@ public class Group {
                 ", name='" + name + '\'' +
                 ", txns=" + txns +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Group(HashSet<User> users, String name) {

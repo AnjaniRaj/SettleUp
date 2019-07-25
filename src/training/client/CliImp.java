@@ -3,8 +3,10 @@ package training.client;
 import training.beans.Group;
 import training.beans.User;
 import training.dao.GroupDAO;
+import training.dao.OwesOwedDAO;
 import training.dao.UserDAO;
 import training.standards.IGroupDAO;
+import training.standards.IOwesOwedDAO;
 import training.standards.IUserDAO;
 
 import java.io.*;
