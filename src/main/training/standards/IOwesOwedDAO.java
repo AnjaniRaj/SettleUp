@@ -1,7 +1,7 @@
-package training.standards;
+package main.training.standards;
 
-import training.beans.Group;
-import training.beans.User;
+import main.training.beans.Group;
+import main.training.beans.User;
 
 public interface IOwesOwedDAO {
     boolean insertOwesOwed(User user, Group group, int owes, int owed);

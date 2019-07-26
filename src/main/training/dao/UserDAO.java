@@ -1,8 +1,8 @@
-package training.dao;
+package main.training.dao;
 
-import training.beans.User;
-import training.connections.GetConnection;
-import training.standards.IUserDAO;
+import main.training.beans.User;
+import main.training.connections.GetConnection;
+import main.training.standards.IUserDAO;
 
 import java.sql.SQLException;
 

@@ -1,6 +1,5 @@
-package training.beans;
+package main.training.beans;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,6 +16,8 @@ public class Group {
     private String name;
     private ArrayList<Transaction> txns;
     private HashMap<User, BigDecimal[]> map;
+
+
 
     @Override
     public String toString() {

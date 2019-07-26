@@ -1,4 +1,4 @@
-package training.beans;
+package main.training.beans;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

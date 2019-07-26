@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6995a2ec-328c-4ee8-8dca-70b2ede18389" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/training/dao/OwesOwedDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/training/standards/IOwesOwedDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/beans/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/beans/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/training/client/CliImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/training/client/CliImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SettleUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SettleUp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/AppendingObjectOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/Exp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/beans/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/beans/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/beans/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/client/CliImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/connections/GetConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dao/GroupDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dao/OwesOwedDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/standards/IGroupDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/standards/IOwesOwedDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/standards/IUserDAO.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,17 +56,19 @@
         <option value="Anjani Raj &lt;anjani.madhu97@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="pull/chris" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="734" />
-    <option name="height" value="867" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1OVAiP1GHnfe3EZdPeno8U11WO8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -62,9 +80,14 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jars/mysql-connector-java-5.1.16.jar/mysql-connector-java-5.1.16.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anjy\Desktop\Training\Worskspace\SettleUp\src" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -83,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CliImp">
     <configuration name="CliImp " type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="training.client.CliImp" />
       <module name="SettleUp" />
@@ -97,8 +120,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CliImp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.training.client.CliImp" />
+      <module name="SettleUp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.training.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CliImp" />
         <item itemvalue="Application.CliImp " />
       </list>
     </recent_temporary>
@@ -184,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564052767853</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Balance DAO created and implemented">
+      <created>1564053911400</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564053911400</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -201,7 +245,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -216,90 +262,7 @@
     <MESSAGE value="CLI implemented perfectly" />
     <MESSAGE value="amount changed to big decimal" />
     <MESSAGE value="sql users inserted" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql users inserted" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SettleUp</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <MESSAGE value="Balance DAO created and implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Balance DAO created and implemented" />
   </component>
 </project>

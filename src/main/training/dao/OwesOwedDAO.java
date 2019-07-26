@@ -1,9 +1,10 @@
-package training.dao;
+package main.training.dao;
 
-import training.beans.Group;
-import training.beans.User;
-import training.connections.GetConnection;
-import training.standards.IOwesOwedDAO;
+import main.training.beans.Group;
+import main.training.beans.User;
+import main.training.standards.IOwesOwedDAO;
+import main.training.connections.GetConnection;
+
 import java.sql.SQLException;
 
 public class OwesOwedDAO implements IOwesOwedDAO {
