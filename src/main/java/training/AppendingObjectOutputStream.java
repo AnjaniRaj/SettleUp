@@ -1,4 +1,4 @@
-package main.training;
+package training;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;

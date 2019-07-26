@@ -1,6 +1,7 @@
-package main.training.standards;
+package training.standards;
 
-import main.training.beans.User;
+
+import training.beans.User;
 
 public interface IUserDAO {
 

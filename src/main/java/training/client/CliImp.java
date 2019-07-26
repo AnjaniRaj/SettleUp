@@ -1,12 +1,12 @@
-package main.training.client;
+package training.client;
 
 import org.apache.log4j.Logger;
-import main.training.beans.Group;
-import main.training.beans.User;
-import main.training.dao.GroupDAO;
-import main.training.dao.UserDAO;
-import main.training.standards.IGroupDAO;
-import main.training.standards.IUserDAO;
+import training.beans.Group;
+import training.beans.User;
+import training.dao.GroupDAO;
+import training.dao.UserDAO;
+import training.standards.IGroupDAO;
+import training.standards.IUserDAO;
 
 import java.io.*;
 import java.math.BigDecimal;

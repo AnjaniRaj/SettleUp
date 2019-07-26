@@ -1,4 +1,4 @@
-package main.training;
+package training;
 
 import main.training.beans.Group;
 import main.training.beans.User;

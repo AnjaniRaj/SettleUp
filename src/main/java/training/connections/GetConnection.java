@@ -1,4 +1,4 @@
-package main.training.connections;
+package training.connections;
 
 import java.sql.*;
 

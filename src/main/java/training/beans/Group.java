@@ -1,4 +1,4 @@
-package main.training.beans;
+package training.beans;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

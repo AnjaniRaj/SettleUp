@@ -1,11 +1,22 @@
-package main.training.beans;
+package training.beans;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class Transaction{
+    private int id;
     private BigDecimal amount;
     private User creator;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
 
     public Transaction(BigDecimal amount, User creator) {
         this.amount = amount;
