@@ -2,10 +2,13 @@ package training.client;
 
 import org.apache.log4j.Logger;
 import training.beans.Group;
+import training.beans.Transaction;
 import training.beans.User;
 import training.dao.GroupDAO;
+import training.dao.TransactionDAO;
 import training.dao.UserDAO;
 import training.standards.IGroupDAO;
+import training.standards.ITransactionDAO;
 import training.standards.IUserDAO;
 
 import java.io.*;
@@ -24,9 +27,10 @@ public class CliImp {
             int choice = Integer.parseInt(in.nextLine());
             HashSet<User> set = new HashSet<>();
             Group g1;
+            User u1;
             switch (choice) {
                 case 1:
-                    User u1 = new User(getUser());
+                    u1 = new User(getUser());
                     u1.setId(12);
                     System.out.println("Created [" + u1 + "] successfully");
                     IUserDAO userDAO = new UserDAO();
@@ -51,9 +55,10 @@ public class CliImp {
                     System.out.println(g1);
                     break;
                 case 3:
-//                    g1=getGroupSer();
-//                    g1.addTxns(new Transaction(getTransactionAmount(), getUserFromArrayList(getUser())));
-                   // System.out.println(g1);
+                    Transaction transaction = new Transaction(1,getTransactionAmount(),new User("anjani"),1);
+                    ITransactionDAO transactionDAO = new TransactionDAO();
+                    transactionDAO.insertTransaction(transaction);
+
                     break;
                 case 4:
                     System.exit(0);

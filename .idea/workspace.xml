@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6995a2ec-328c-4ee8-8dca-70b2ede18389" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/dao/TransactionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/training/standards/ITransactionDAO.java" afterDir="false" />
+    <list default="true" id="6995a2ec-328c-4ee8-8dca-70b2ede18389" name="Default Changelist" comment="before merge commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SettleUp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SettleUp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/AppendingObjectOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/AppendingObjectOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/Exp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/beans/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/beans/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/beans/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/beans/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/client/CliImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/client/CliImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/connections/GetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/connections/GetConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/dao/GroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/dao/GroupDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/dao/OwesOwedDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/dao/OwesOwedDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/standards/IGroupDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/standards/IGroupDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/standards/IOwesOwedDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/standards/IOwesOwedDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/training/standards/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/standards/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/beans/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/beans/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/client/CliImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/client/CliImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/dao/TransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/dao/TransactionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/training/standards/ITransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/training/standards/ITransactionDAO.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564126734489</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="before merge commit">
+      <created>1564132315878</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1564132315878</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -256,6 +249,7 @@
     <MESSAGE value="sql users inserted" />
     <MESSAGE value="Balance DAO created and implemented" />
     <MESSAGE value="maven and log4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="maven and log4j" />
+    <MESSAGE value="before merge commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="before merge commit" />
   </component>
 </project>

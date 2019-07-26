@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TransactionDAO implements ITransactionDAO {
     @Override
-    public boolean insertTransactions(Transaction transaction) {
+    public boolean insertTransaction(Transaction transaction) {
         String sql = "insert into groups values (?,?,?,?,?)";
         GetConnection gc = new GetConnection();
 
@@ -19,7 +19,7 @@ public class TransactionDAO implements ITransactionDAO {
             gc.ps.setInt(1, transaction.getId());
             gc.ps.setInt(2, transaction.getCreator().getId());
             gc.ps.setBigDecimal(3,transaction.getAmount());
-            gc.ps.setInt(4,);
+            gc.ps.setInt(4,transaction.getGroupId());
 
             return gc.ps.executeUpdate() > 0;
 

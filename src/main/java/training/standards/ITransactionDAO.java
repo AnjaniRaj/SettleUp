@@ -5,7 +5,7 @@ import training.beans.Transaction;
 import java.util.List;
 
 public interface ITransactionDAO {
-    boolean insertTransactions(Transaction transaction);
+    boolean insertTransaction(Transaction transaction);
     List<Transaction> getTransactionsByGroup(int groupId);
 
 }
