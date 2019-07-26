@@ -13,9 +13,11 @@ import java.math.MathContext;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class CliImp {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+import org.apache.log4j.Logger;
 
+public class CliImp {
+	static Logger log = Logger.getLogger(CliImp.class.getName());
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         while (true) {
             System.out.println("1. Enter User \t 2. Enter New Group \t 3. Enter New Transaction \t 4. Exit");
             Scanner in = new Scanner(System.in);
@@ -25,6 +27,7 @@ public class CliImp {
             switch (choice) {
                 case 1:
                     User u1 = new User(getUser());
+                	log.info("Inserting user");
                     System.out.println("Created [" + u1 + "] successfully");
                     IUserDAO userDAO = new UserDAO();
                     userDAO.insertUser(u1);
