@@ -1,6 +1,5 @@
-package training.beans;
+package main.training.beans;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 public class User {

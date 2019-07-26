@@ -1,6 +1,6 @@
-package training.standards;
+package main.training.standards;
 
-import training.beans.Group;
+import main.training.beans.Group;
 
 public interface IGroupDAO {
     boolean insertGroup(Group group);

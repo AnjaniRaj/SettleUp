@@ -1,11 +1,12 @@
-package training.client;
+package main.training.client;
 
-import training.beans.Group;
-import training.beans.User;
-import training.dao.GroupDAO;
-import training.dao.UserDAO;
-import training.standards.IGroupDAO;
-import training.standards.IUserDAO;
+import org.apache.log4j.Logger;
+import main.training.beans.Group;
+import main.training.beans.User;
+import main.training.dao.GroupDAO;
+import main.training.dao.UserDAO;
+import main.training.standards.IGroupDAO;
+import main.training.standards.IUserDAO;
 
 import java.io.*;
 import java.math.BigDecimal;
@@ -14,6 +15,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class CliImp {
+    static Logger log = Logger.getLogger(CliImp.class.getName());
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         while (true) {
@@ -25,8 +27,10 @@ public class CliImp {
             switch (choice) {
                 case 1:
                     User u1 = new User(getUser());
+                    u1.setId(12);
                     System.out.println("Created [" + u1 + "] successfully");
                     IUserDAO userDAO = new UserDAO();
+                    log.debug("our first debug");
                     userDAO.insertUser(u1);
                     break;
                 case 2:
